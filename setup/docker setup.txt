@@ -1,0 +1,10 @@
+cd to directory: 
+/mnt/c/Users/oishi/Desktop/development/LaravelDevTest
+
+docker build -t userservice .
+
+docker run -it --rm -v ./mnt/c/Users/oishi/Desktop/development/LaravelDevTest userservice /bin/bash
+
+docker run -it --rm -v /c/Users/oishi/Desktop/development/LaravelDevTest:/src userservice /bin/bash
+
+docker run -it --rm -v /c/Users/oishi/Desktop/development/LaravelDevTest:/ userservice /bin/bash
